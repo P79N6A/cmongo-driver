@@ -41,7 +41,7 @@ int main (int argc, char *argv[])
                                 "return null;"
                                 "}";
    mongoc_init ();
-   mongoc_client_t* client = mongoc_client_new("mongodb://yq01-wood.epc.baidu.com:8344");
+   mongoc_client_t* client = mongoc_client_new("mongodb://yourip:port");
    mongoc_database_t *database = mongoc_client_get_database (client, "logistics");
    //mongoc_collection_t* collection = mongoc_client_get_collection (client, "logistics", "testcrud");
 
